@@ -1,0 +1,76 @@
+.business-center {
+padding-top: 25px;
+padding-bottom: 59px;
+    &__container {
+    }
+    
+    &__content {
+    }
+    
+    &__row {
+        display: flex;
+        margin-bottom: 59px;
+    }
+    
+    &__card {
+        padding: 29px;
+        background-color: #f4f4f4;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    
+    &__card-icon {
+        margin-bottom: 24px;
+    }
+    
+    &__card-title {
+        color: #1a1a1a;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    &__title {
+        color: #1a1a1a;
+        font-family: "Open Sans";
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 38px;
+
+    }
+    
+    &__desc {
+        color: #1a1a1a;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 49px;
+        text-align: center;
+
+    }
+    
+    &__link {
+        display: inline-flex;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        background-color: #ff0000;
+        cursor: pointer;
+        padding: 19px 18px;
+
+        &-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    }
+    .container {
+    }
+    

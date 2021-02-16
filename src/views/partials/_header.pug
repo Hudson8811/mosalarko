@@ -1,14 +1,38 @@
 header.site-header
 	.sh-line-top
-		.sh-logo
-			img(src="img/logo_header.png", alt="")
-		.sh-top-right
-			a.sh-phone(href="tel:+74959561315")
-				.sh-phone__icon
+		.container.sh-line-top__container
+			a.sh-logo(href="")
+				img(src="img/logo_header.png", alt="logo")
+			.sh-top-right
+				a.sh-phone(href="tel:+74959561315")
+					.sh-phone__icon
+						img(src="img/phone.png", alt="icon")
+					.sh-phone__text +7 (495) 956‑13-15
+				a.sh-mail(href="")
 					img(src="img/mail_btn.png", alt="")
-				.sh-phone__text +7 (495) 956‑13-15
-			img(src="img/logo_header.png", alt="")
+				.sh-burger
+					span
+
 	.sh-line-bottom
-	.sh-burger
-		span
+		.container.sh-line-bottom__container
+			ul.sh-menu
+				li.sh-menu__item
+					a.sh-menu__link(href='/1') О НАС
+				li.sh-menu__item
+					a.sh-menu__link(href='/1') ФОТОГАЛЕРЕЯ
+				li.sh-menu__item.menu-item-has-children
+					a.sh-menu__link(href='/1') ПОМЕЩЕНИЯ
+					ul.sh-sub-menu
+						li.sh-sub-menu__item
+							a.sh-sub-menu__link(href='/1') Офисы
+						li.sh-sub-menu__item
+							a.sh-sub-menu__link(href='/1') Конференц-залы
+				li.sh-menu__item
+					a.sh-menu__link(href='/1') УСЛОВИЯ СОТРУДНИЧЕСТВА
+				li.sh-menu__item
+					a.sh-menu__link(href='/1') КОНТАКТЫ
+				li.sh-menu__item
+					a.sh-menu__link(href='/1') НОВОСТИ
+
+
 

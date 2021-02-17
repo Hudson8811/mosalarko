@@ -1,0 +1,96 @@
+.feedback {
+padding-top: 69px;
+padding-bottom: 82px;
+background: url('../img/feedback.jpg');
+position: relative;
+&::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.5;
+}
+    &__container {
+        position: relative;
+        z-index: 2;
+    }
+    
+    &__title {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 28px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+    }
+
+    &__desc {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 29px;
+
+    }
+    
+    &__connection {
+        display: flex;
+        padding-left: 58px;
+        align-items: center;
+    }
+    
+    &__tel-wrapper {
+        margin-right: 202px;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__tel-icon {
+        margin-right: 20px;
+    }
+    
+    &__tel {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 36px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+    }
+    
+    &__message {
+        padding: 15px 20px;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        color: #fff;
+        background: #ff0000;
+        border: 1px solid #fff;
+        cursor: pointer;
+        &_mod {
+            background: none;
+        }
+    }
+    }
+    .container {
+    }
+    .feedback-desc {
+}
+    

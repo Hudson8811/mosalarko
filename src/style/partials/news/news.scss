@@ -61,6 +61,7 @@ padding-bottom: 65px;
         font-style: normal;
         letter-spacing: normal;
         line-height: 30px;
+        text-decoration: underline;
     }
     
     &__card-desc {
@@ -83,6 +84,11 @@ padding-bottom: 65px;
         text-align: center;
         margin-bottom: 48px;
         position: relative;
+        &:hover {
+            &::after {
+                display: none;
+            }
+        }
         &::after {
             content: '';
             position: absolute;
@@ -106,8 +112,13 @@ padding-bottom: 65px;
         font-style: normal;
         letter-spacing: normal;
         padding: 13px 48px;
-        border: 1px solid #ff9191;
-
+        border: 1px solid #fc2704;
+        transition: .3s;
+        &:hover {
+            border: 1px solid transparent;
+            color: #fff;
+            background-color: #fc2704;
+        }
         &-wrapper {
             display: flex;
             justify-content: center;

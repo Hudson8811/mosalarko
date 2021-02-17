@@ -1,0 +1,41 @@
+.characteristics {
+    padding-top: 65px;
+    padding-bottom: 45px;
+    &__container {
+    }
+    &__title {
+        margin-bottom: 28px;
+        color: #1a1a1a;
+        font-family: "Open Sans";
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    
+    &__card {
+        padding: 15px;
+        padding-right: 15px;
+        flex-basis: 33.333333%;
+    }
+    
+    &__card-icon {
+        margin-bottom: 10px;
+    }
+    
+    &__card-desc {
+        color: #1a1a1a;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+    }
+}

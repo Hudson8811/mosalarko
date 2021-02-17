@@ -25,7 +25,20 @@
     }
     
     &__card-icon {
-        margin-bottom: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 80px;
+
+        &-wrapper {
+            position: relative;
+            max-height: 80px;
+            margin-bottom: 10px;
+            height: 80px;
+
+        }
     }
     
     &__card-desc {

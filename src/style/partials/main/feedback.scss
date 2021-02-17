@@ -1,8 +1,11 @@
 .feedback {
-padding-top: 69px;
-padding-bottom: 82px;
+padding-top: 59px;
+padding-bottom: 71px;
 background: url('../img/feedback.jpg');
 position: relative;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 &::after {
     content: '';
     position: absolute;
@@ -27,7 +30,7 @@ position: relative;
         letter-spacing: normal;
         line-height: normal;
         text-align: center;
-        margin-bottom: 36px;
+        margin-bottom: 24px;
         text-transform: uppercase;
     }
 

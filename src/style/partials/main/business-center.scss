@@ -9,12 +9,15 @@ padding-bottom: 59px;
     
     &__row {
         display: flex;
-        margin-bottom: 59px;
+        margin-bottom: 46px;
     }
     
     &__card {
         padding: 29px;
-        background-color: #f4f4f4;
+        width: 25%;
+        background-color: #b8b7b7;
+        // background-color: #f4f4f4;
+        
         &:not(:last-child) {
             margin-right: 20px;
         }
@@ -38,7 +41,7 @@ padding-bottom: 59px;
         font-weight: 700;
         line-height: 30px;
         text-align: center;
-        margin-bottom: 38px;
+        margin-bottom: 32px;
 
     }
     
@@ -48,8 +51,10 @@ padding-bottom: 59px;
         font-size: 18px;
         font-weight: 400;
         line-height: 30px;
+        margin: 0 auto;
         margin-bottom: 49px;
         text-align: center;
+        max-width: 90%;
 
     }
     
@@ -59,10 +64,9 @@ padding-bottom: 59px;
         font-family: "Open Sans";
         font-size: 16px;
         font-weight: 700;
-        line-height: 30px;
         background-color: #ff0000;
         cursor: pointer;
-        padding: 19px 18px;
+        padding: 15px 18px;
 
         &-wrapper {
             display: flex;

@@ -1,18 +1,11 @@
 .news {
-padding-top: 160px;
+padding-top: 32px;
 padding-bottom: 65px;
     &__container {
     }
     
     &__title {
-        color: #1b1b1b;
-        font-family: "Open Sans";
-        font-size: 28px;
-        font-weight: 700;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: 24px;
-        text-align: center;
+        
         margin-bottom: 41px;
     }
     
@@ -20,7 +13,7 @@ padding-bottom: 65px;
         margin: -20px;
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 50px;
+        margin-bottom: 19px;
     }
     
     &__card {
@@ -47,16 +40,15 @@ padding-bottom: 65px;
     
     &__card-date {
         position: absolute;
-        bottom: 20px;
-        left: 20px;
-        padding: 2px 10px;
+        bottom: 11px;
+        left: 23px;
+        padding: 5px 18px;
         color: #ffffff;
         font-family: "Open Sans";
         font-size: 16px;
         font-weight: 700;
         font-style: normal;
         letter-spacing: normal;
-        line-height: 30px;
         background: #fc2704;
         opacity: 0.8;
     }
@@ -113,8 +105,7 @@ padding-bottom: 65px;
         font-weight: 700;
         font-style: normal;
         letter-spacing: normal;
-        line-height: 30px;
-        padding: 20px 48px;
+        padding: 13px 48px;
         border: 1px solid #ff9191;
 
         &-wrapper {

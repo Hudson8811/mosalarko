@@ -144,6 +144,54 @@
           </div>
         </div>
       </section>
+      <section class="section-map">
+        <div class="secmap-inner" id="secmap-map"></div>
+      </section>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=e8f491bc-318f-46ec-97f9-9a35aaae3645"></script>
+      <script>
+        var iconImageSizeDesktop=[192, 177];
+        var iconImageOffsetDesktop=[-100, -177];
+        
+        var iconImageSizeMob=[120, 111];
+        var iconImageOffsetMob=[-60, -111];
+        
+        var is_mob = window.innerWidth<1000;//Мобилка ли?
+        
+        
+        ymaps.ready(function () {
+        	var myMap = new ymaps.Map('secmap-map', {
+        			center: [55.7390625,37.658652],
+        
+        			zoom: 17,
+        			controls: []
+        		}, {
+        			searchControlProvider: 'yandex#search'
+        		}),
+        
+        		// Создаём макет содержимого.
+        		MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        			'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        		),
+        
+        		myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        			hintContent: false,
+        			balloonContent: false
+        		}, {
+        			// Опции.
+        			// Необходимо указать данный тип макета.
+        			iconLayout: 'default#image',
+        			// Своё изображение иконки метки.
+        			iconImageHref: 'img/map-icon.png',
+        			// Размеры метки.
+        			iconImageSize: is_mob?iconImageSizeMob:iconImageSizeDesktop,
+        			// Смещение левого верхнего угла иконки относительно
+        			// её "ножки" (точки привязки).
+        			iconImageOffset: is_mob?iconImageOffsetMob:iconImageOffsetDesktop,
+        		});
+        	myMap.geoObjects
+        		.add(myPlacemark);
+        });
+      </script>
     </main>
     <footer class="site-footer">
       <div class="sf-top">

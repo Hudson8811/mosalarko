@@ -1,0 +1,21 @@
+.offices-section {}
+
+.offices-heading {}
+
+.free-offices {}
+
+.freeoff-tab-controls {
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+		background-color: #F4F4F4;
+		transition-duration: .2s;
+
+		&:hover {
+			background-color: #FF0000;
+		}
+
+		&--active {}
+	}
+}

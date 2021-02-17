@@ -52,6 +52,7 @@
 	text-decoration: underline;
 
 	&:hover {
+		color: #fd0202;
 		text-decoration: none;
 	}
 
@@ -99,7 +100,7 @@
 		cursor: pointer;
 
 		&:hover {
-			opacity: .7;
+			color: #fd0202;
 		}
 	}
 }
@@ -159,6 +160,7 @@
 
 	&:hover {
 		text-decoration: none;
+		color: #fd0202;
 	}
 
 	&:active {}

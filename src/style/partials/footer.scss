@@ -1,0 +1,167 @@
+.site-footer {
+	background: #fff;
+}
+
+.sf-top {
+	padding-top: 39px;
+	padding-bottom: 21px;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+
+	&__container {}
+}
+
+.sf-row {
+	display: flex;
+	justify-content: space-between;
+
+	&+.sf-row {
+		margin-top: 30px;
+		margin-top: 25px;
+	}
+}
+
+.sf-col {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 296px;
+	max-width: 296px;
+	//background: red;
+
+}
+
+.sf-col-name {
+	display: block;
+	color: #272727;
+	font-size: 18px;
+	line-height: normal;
+	letter-spacing: normal;
+	font-weight: 700;
+	padding-bottom: 4px;
+}
+
+.sf-menu-link {
+	display: block;
+	color: #272727;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: normal;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:active {}
+
+	&:focus {}
+}
+
+
+.sf-contacts {
+	color: #272727;
+	font-size: 16px;
+	line-height: normal;
+	letter-spacing: normal;
+	font-weight: 400;
+	font-style: normal;
+	text-align: left;
+
+	&__phone {
+		display: block;
+
+		&:hover {}
+
+		&:active {}
+
+		&:focus {}
+	}
+
+	&__email {
+		display: block;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&:active {}
+
+		&:focus {}
+	}
+
+	&__phone,
+	&__email {
+		transition-duration: .2s;
+		cursor: pointer;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.sf-address {
+	color: #272727;
+	font-size: 16px;
+	line-height: normal;
+	letter-spacing: normal;
+	font-weight: 400;
+	font-style: normal;
+
+	br {}
+}
+
+.footer-logo {
+	display: block;
+	width: 193px;
+	max-width: 100%;
+	height: auto;
+	margin-top: 5px;
+
+	img {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.sf-bottom {
+	padding-top: 24px;
+	padding-bottom: 29px;
+
+	&__container {}
+}
+
+
+.sf-copyright {
+	color: #272727;
+	font-size: 12px;
+	line-height: normal;
+	letter-spacing: normal;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.sf-bottom-link {
+	color: #272727;
+	font-size: 12px;
+	line-height: normal;
+	letter-spacing: normal;
+	font-weight: 400;
+	font-style: normal;
+	text-align: left;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:active {}
+
+	&:focus {}
+}

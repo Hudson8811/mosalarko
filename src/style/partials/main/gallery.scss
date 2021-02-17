@@ -50,6 +50,13 @@
         text-transform: uppercase;
         background-color: #fff;
         z-index: 3;
+        transition: .3s;
+        &:hover {
+            color: #fff;
+            background-color: #ff0000;
+            border: none;
+            cursor: pointer;
+        }
     }
 }
     

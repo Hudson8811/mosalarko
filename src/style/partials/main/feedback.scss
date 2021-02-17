@@ -84,11 +84,11 @@ background-size: cover;
         line-height: normal;
         text-align: left;
         color: #fff;
-        background: #ff0000;
         border: 1px solid #fff;
         cursor: pointer;
-        &_mod {
-            background: none;
+        transition: 0.3s;
+        &:hover {
+            background: #ff0000;
         }
     }
     }

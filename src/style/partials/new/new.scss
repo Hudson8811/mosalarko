@@ -1,5 +1,5 @@
 .new {
-padding-top: 160px;
+padding-top: 37px;
 padding-bottom: 50px;
     &__container {
     }
@@ -30,11 +30,10 @@ padding-bottom: 50px;
         font-weight: 700;
         font-style: normal;
         letter-spacing: normal;
-        line-height: 28px;
         background-color: #ff0000;
-        padding: 11px 27px;
+        padding: 7px 27px;
         display: inline-block;
-        margin-bottom: 22px;
+        margin-bottom: 15px;
     }
     
     &__sub-title {
@@ -46,7 +45,7 @@ padding-bottom: 50px;
         letter-spacing: normal;
         line-height: normal;
         text-align: left;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
     
     &__desc {
@@ -57,11 +56,11 @@ padding-bottom: 50px;
         font-style: normal;
         letter-spacing: normal;
         line-height: 28px;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
         &_bold {
             font-weight: 700;
-        }
-        &:not(:last-child) {
-            margin-bottom: 25px;
         }
     }
     
@@ -78,25 +77,32 @@ padding-bottom: 50px;
         font-style: normal;
         letter-spacing: normal;
         line-height: 28px;
-        padding: 18px 38px;
+        padding: 11px 38px;
         border: 1px solid #ff0000;
+        transition: .3s;
+        
+        &:hover {
+            border: 1px solid transparent;
+            color: #fff;
+            background: #ff0000;
+        }
     }
 
     &__placing {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         margin-right: 10px;
         &-wrapper {
             display: flex;
         justify-content: center;
+        align-items: stretch;
+        margin-bottom: 20px;
 
         }
         &-label {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-
         }
 
         &-input {
@@ -116,14 +122,17 @@ padding-bottom: 50px;
         }
 
         &-view {
+            margin-bottom: 10px;
+            align-self: flex-start;
+            justify-self: flex-start;
             font-size: 18px;
             font-weight: 700;
             background-color: #ccc7c7;
             padding: 7px 20px;
-            margin-bottom: 10px;
         }
 
         &-icon {
+            margin: auto;
             filter: grayscale(1) brightness(1.4) invert(1);
         }
     }

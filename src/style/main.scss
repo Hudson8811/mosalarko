@@ -5,11 +5,12 @@
 
 /* my style */
 
-@import "partials/_var"; 
+@import "partials/_var";
 
 @import "partials/mixin";
 @import "partials/components";
 @import "partials/header";
+
 @import "partials/main";
 @import "partials/footer";
 @import "partials/main-adaptive";
@@ -17,6 +18,11 @@
 @import "partials/main/business-center";
 @import "partials/main/place";
 @import "partials/main/gallery";
+
+
+
+
+@import "partials/header-adaptive";
 
 
 

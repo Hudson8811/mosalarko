@@ -2,6 +2,10 @@
     padding-top: 52px;
     padding-bottom: 68px;
     background: #f4f4f4;
+    @media screen and (max-width: 450px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     &__container {
     }
     
@@ -14,16 +18,23 @@
         line-height: 30px;
         text-align: center;
         text-transform: uppercase;
+        @media screen and (max-width: 660px) {
+           font-size: 18px;
+        }
     }
     
     &__row {
         display: flex;
         margin-bottom: 44px;
+        @media screen and (max-width: 800px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     
     &__card {
         background-color: #ffffff;
-        width: 33.3333%;
+        width: calc(33.3333%);
         padding-top: 49px;
         padding-bottom: 43px;
         padding-left: 45px;
@@ -34,6 +45,28 @@
         &:not(:last-child) {
             margin-right: 40px;
         }
+        @media screen and (max-width: 1040px) {
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+            &:not(:last-child) {
+                margin-right: 0px;
+                margin-bottom: 40px;
+            }
+            &:nth-child(1) {
+                margin-right: 40px;
+            }
+            width: calc(50% - 20px);
+        }
+
+        @media screen and (max-width: 450px) {
+            padding: 40px;
+            width: calc(100%);
+            &:nth-child(1) {
+                margin-right: 0px;
+            }
+        }
     }
     
     &__card-floor {
@@ -42,6 +75,9 @@
         font-weight: 700;
         line-height: 30px;
         margin-bottom: 22px;
+        @media screen and (max-width: 1040px) {
+            font-size: 18px;
+        }
     }
     
     &__card-size {
@@ -52,6 +88,10 @@
         font-size: 48px;
         text-align: center;
         margin-bottom: 29px;
+        width: 100%;
+        @media screen and (max-width: 1040px) {
+            font-size: 32px;
+        }
     }
     
     &__card-price {
@@ -59,6 +99,9 @@
         font-size: 24px;
         font-style: normal;
         line-height: 30px;
+        @media screen and (max-width: 1040px) {
+            font-size: 18px;
+        }
     }
 
     &__link {

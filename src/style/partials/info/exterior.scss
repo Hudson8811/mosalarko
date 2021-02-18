@@ -6,6 +6,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    @media screen and (max-width: 660px) {
+        padding: 20px 0;
+    }
     &::before {
         content: '';
         position: absolute;

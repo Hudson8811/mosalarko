@@ -1,0 +1,94 @@
+.cooperation {
+padding-top: 36px;
+padding-bottom: 70px;
+    &__container {
+    }
+    
+    &__work {
+        display: flex;
+        margin-bottom: 50px;
+    }
+    
+    &__broker-wrapper {
+        display: flex;
+        align-items: center;
+        margin-right: 170px;
+    }
+    
+    &__broker-icon {
+        margin-right: 20px;
+
+    }
+    
+    &__broker-text {
+        color: #1c1c1c;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+    
+    &__plan-wrapper {
+        display: flex;
+        align-items: center;   
+        max-width: 450px;     
+    }
+    
+    &__plan-icon {
+        margin-right: 20px;
+
+    }
+    
+    &__plan-text {
+        color: #1c1c1c;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        bold {
+            font-weight: 700;
+        }
+    }
+    
+    &__title {
+        color: #171717;
+        font-family: "Open Sans";
+        font-size: 28px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    &__stage-wrapper {
+       
+    }
+    
+    &__stage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__stage-group {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__stage-icon {
+    }
+    
+    &__stage-text {
+    }
+    
+    &__stage-time {
+    }
+}
+    
+    

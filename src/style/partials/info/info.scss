@@ -1,0 +1,59 @@
+.info {
+padding-top: 47px;
+padding-bottom: 37px;
+    &__container {
+    }
+    
+    &__title {
+        color: #1c1c1c;
+        font-family: "Open Sans";
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+    
+    &__desc {
+        color: #1c1c1c;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        padding: 0 15px;
+        margin-bottom: 43px;
+    }
+    
+    &__company-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__company-goverment-wrapper {
+        display: flex;
+        align-items: center;
+        margin-right: 75px;
+    }
+    
+    &__company-government-icon {
+        margin-right: 23px;
+    }
+    
+    &__company-government {
+        color: #1c1c1c;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    &__company-alarko-wrapper {
+    }
+    
+    &__company-alarko-icon {
+    }
+    }
+    .container {
+    }
+    

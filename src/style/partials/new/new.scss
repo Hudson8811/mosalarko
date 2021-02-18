@@ -91,7 +91,10 @@ padding-bottom: 50px;
     &__placing {
         display: flex;
         align-items: stretch;
-        margin-right: 10px;
+        &:not(:last-child) {
+        margin-right: 21px;
+
+        }
         &-wrapper {
             display: flex;
         justify-content: center;
@@ -125,10 +128,13 @@ padding-bottom: 50px;
             margin-bottom: 10px;
             align-self: flex-start;
             justify-self: flex-start;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 700;
-            background-color: #ccc7c7;
-            padding: 7px 20px;
+            background-color: #f4f4f4;
+            padding: 7px 14px;
+            &_short {
+                padding: 7px 22px;
+            }
         }
 
         &-icon {

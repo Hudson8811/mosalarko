@@ -9,9 +9,17 @@
     }
     
     &__img-wrapper {
+        width: 33.3333333%;
+        top: 0;
         position: relative;
-        width: 33.3333%;
         padding-top: (560/1281 * 100%);
+        @media screen and (max-width: 578px) {
+            width: 100%;
+            padding-top: 0;
+            &:not(:nth-child(2)) {
+                display: none;
+            }
+        }
         &:not(:nth-child(2)) {
             &::after {
                 content: '';
@@ -33,6 +41,14 @@
         bottom: 0;
         right: 0;
         object-fit: cover;
+        max-height: 561px;
+        @media screen and (max-width: 578px) {
+            width: 100%;
+            position: static;
+        }
+        @media screen and (max-width: 578px) {
+           margin: auto;
+        }
     }
 
     &__link {

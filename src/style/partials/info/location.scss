@@ -1,6 +1,9 @@
 .location {
     padding-top: 48px;
     padding-bottom: 38px;
+    @media screen and (max-width: 660px) {
+        padding: 20px 0;
+    }
     &__container {
     }
     
@@ -31,6 +34,10 @@
         line-height: 30px;
         text-align: center;
         padding: 0 70px;
+        @media screen and (max-width: 660px) {
+            font-size: 14px;
+            padding: 0;
+        }
         bold {
             font-weight: 700;
         }

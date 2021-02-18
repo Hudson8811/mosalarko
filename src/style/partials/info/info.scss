@@ -1,6 +1,9 @@
 .info {
 padding-top: 47px;
 padding-bottom: 37px;
+@media screen and (max-width: 660px) {
+    padding: 20px 0;
+}
     &__container {
     }
     
@@ -12,6 +15,9 @@ padding-bottom: 37px;
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 35px;
+        @media screen and (max-width: 660px) {
+            margin-bottom: 20px;
+        }
     }
     
     &__desc {
@@ -23,18 +29,28 @@ padding-bottom: 37px;
         text-align: center;
         padding: 0 15px;
         margin-bottom: 43px;
+        @media screen and (max-width: 660px) {
+            margin-bottom: 20px;
+        }
     }
     
     &__company-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 660px) {
+            flex-direction: column;
+        }
     }
     
     &__company-goverment-wrapper {
         display: flex;
         align-items: center;
         margin-right: 75px;
+        @media screen and (max-width: 660px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
     }
     
     &__company-government-icon {

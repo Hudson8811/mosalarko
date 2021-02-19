@@ -1,0 +1,22 @@
+extends layouts/default
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    include partials/main/gallery-page
+    include partials/main/feedback
+
+    script.
+        $(document).ready(function() {
+            $("a.gallery-photo").fancybox();
+            var defaults = {
+                arrows: true,
+            }
+        });

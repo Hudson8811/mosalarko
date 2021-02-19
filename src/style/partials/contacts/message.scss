@@ -19,6 +19,9 @@
     
     &__form {
         padding: 0 18%;
+        @media screen and (max-width: 500px) {
+           padding: 0;
+          }
     }
     
     &__form-label {
@@ -27,6 +30,9 @@
         justify-content: center;
         &:not(:last-child) {
             margin-bottom: 20px;
+            @media screen and (max-width: 800px) {
+                margin-bottom: 5px;
+              }
         }
         @media screen and (max-width: 800px) {
            flex-direction: column;
@@ -38,30 +44,50 @@
         flex: 0 0 auto;
         width: 105px;
         margin-right: 18px;
+          @media screen and (max-width: 800px) {
+           margin-right: 0;
+           margin-bottom: 5px;
+         }
     }
     
     &__form-input {
         width: 100%;
         background-color: #fff;
         padding: 10px;
+          @media screen and (max-width: 800px) {
+           margin-right: 0;
+           margin-bottom: 5px;
+         }
     }
     
     &__form-tel {
         flex: 0 0 auto;
         width: 105px;
         margin-right: 18px;
+          @media screen and (max-width: 800px) {
+           margin-right: 0;
+           margin-bottom: 5px;
+         }
     }
     
     &__form-mail {
         flex: 0 0 auto;
         width: 105px;
         margin-right: 18px;
+          @media screen and (max-width: 800px) {
+           margin-right: 0;
+           margin-bottom: 5px;
+         }
     }
     &__form-message {
         flex: 0 0 auto;
         width: 105px;
         margin-right: 18px;
         align-self: flex-start;
+          @media screen and (max-width: 800px) {
+           margin-right: 0;
+           margin-bottom: 15px;
+         }
     }
     &__form-textarea {
         width: 100%;
@@ -119,6 +145,9 @@
         line-height: 24px;
         text-align: center;
         padding: 0 18%;
+        @media screen and (max-width: 500px) {
+            padding: 0;
+        }
     }
 }
     

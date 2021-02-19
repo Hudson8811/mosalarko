@@ -161,6 +161,7 @@
 .sh-line-bottom {
 	position: relative;
 	z-index: 10;
+	border-bottom: 1px solid #f2f2f2;
 }
 
 .sh-line-bottom__container {
@@ -177,7 +178,7 @@
 	@media screen and (min-width: 1071px) {
 		&__item {
 			display: block;
-			padding: 15px 30px 15px 15px;
+			//padding: 15px 30px 15px 15px;
 			position: relative;
 
 			@media screen and (max-width: 1362px) {
@@ -210,9 +211,14 @@
 		transition-duration: .2s;
 		cursor: pointer;
 
+		@media screen and (min-width: 1071px) {
+
+			padding: 15px 30px 15px 15px;
+		}
 
 		&:hover {
 			color: #ff0000;
+
 		}
 
 		&:active {}

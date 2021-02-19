@@ -1,3 +1,35 @@
+@media screen and (min-width: 1071px) {
+	.sh-line-bottom{
+		z-index: 20;
+	}
+	.sh-menu__item.menu-item-has-children .sh-menu__link{
+		&:hover{
+			box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.35);
+			&::after{
+				transition-duration: 0;
+				opacity: 1;
+			}
+		}
+		position: relative;
+		&::after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 20px;
+			background: #ffffff;
+			bottom: -10px;
+			left: 0;
+			position: absolute;
+			z-index: 21;
+			opacity: 0;
+			transition-duration: .3s;
+		}
+	}
+	.sh-sub-menu{
+		box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.35);
+	}
+}
+
 @media screen and (max-width: 1070px) {
 
 	.sh-burger {
@@ -110,12 +142,14 @@
 
 
 @media screen and (max-width: 430px) {
-	.body--menu-open{
+	.body--menu-open {
 		overflow: hidden;
 	}
+
 	.container.sh-line-bottom__container {
 		max-width: 100%;
 	}
+
 	.sh-menu {
 		width: 100%;
 	}

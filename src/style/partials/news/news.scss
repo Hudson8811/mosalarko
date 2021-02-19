@@ -5,8 +5,10 @@ padding-bottom: 65px;
     }
     
     &__title {
-        
         margin-bottom: 41px;
+        @media screen and (max-width: 600px) {
+            margin-bottom: 20px;
+        }
     }
     
     &__row {
@@ -14,11 +16,22 @@ padding-bottom: 65px;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 19px;
+        @media screen and (max-width: 600px) {
+            margin: 0;
+        }
     }
     
     &__card {
         padding: 20px;
         flex-basis: 33.333333%;
+        @media screen and (max-width: 900px) {
+            flex-basis: 50%;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 15px;
+            flex-basis: 100%;
+        }
     }
     
     &__card-img-wrapper {
@@ -34,8 +47,7 @@ padding-bottom: 65px;
         left: 0;
         right: 0;
         bottom: 0;
-        max-width: 300px;
-        max-height: 220px;
+        width: 100%;
     }
     
     &__card-date {
@@ -51,6 +63,9 @@ padding-bottom: 65px;
         letter-spacing: normal;
         background: #fc2704;
         opacity: 0.8;
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
     }
     
     &__card-title {
@@ -62,6 +77,9 @@ padding-bottom: 65px;
         letter-spacing: normal;
         line-height: 30px;
         text-decoration: underline;
+        @media screen and (max-width: 600px) {
+            font-size: 16px;
+        }
     }
     
     &__card-desc {
@@ -72,6 +90,9 @@ padding-bottom: 65px;
         letter-spacing: normal;
         line-height: 30px;
         font-weight: 400;
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
     }
     &__more {
         color: #161616;

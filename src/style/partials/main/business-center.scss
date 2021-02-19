@@ -25,7 +25,12 @@ padding-bottom: 59px;
         }
         @media screen and (max-width: 500px) {
             width: calc(100% - 20px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center ;
         }
+
     }
     
     &__card-icon {
@@ -49,6 +54,9 @@ padding-bottom: 59px;
         margin-bottom: 32px;
         @media screen and (max-width: 660px) {
             font-size: 18px;
+        }
+        @media screen and (max-width: 500px) {
+            text-align: center;
         }
 
     }

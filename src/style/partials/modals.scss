@@ -1,0 +1,102 @@
+.mail-modal {
+	width: 460px;
+	padding: 47px 30px 57px;
+	max-width: 100%;
+	background: #fff;
+
+
+	.fancybox-button.fancybox-close-small {
+		background-image: url(../img/cloze_pass.png);
+		background-repeat: no-repeat;
+		background-size: 17px 17px;
+		background-position: center center;
+		transition: all .2s;
+		opacity: 1;
+
+		svg {
+			display: none;
+
+			path {}
+		}
+
+		&:hover {
+			opacity: .7;
+		}
+
+		&:active {}
+
+		&:focus {}
+	}
+}
+
+.mail-modal-inner {
+	width: 319px;
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&--2 {
+		width: 362px;
+
+	}
+}
+
+.mail-modal-icon {
+	height: 50px;
+	width: 80px;
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+		object-position: center center;
+	}
+}
+
+.mail-modal-text {
+	color: #1b1b1b;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 24px;
+
+	b {
+
+		font-weight: 700;
+	}
+
+	p {
+		&+p {
+			margin-top: 24px;
+		}
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.mail-modal-icon{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.mail-modal-text {
+		font-size: 16px;
+		line-height: 1.4;
+		margin-top: 15px;
+
+		p {
+			&+p {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.mail-modal {
+		padding: 30px 15px 30px;
+	}
+
+}

@@ -1,0 +1,458 @@
+@media screen and (max-width:1024px) {
+	.captab-head-controller__pic {
+		margin-top: 0;
+		background: #ffffff;
+		//display: none;
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		right: 0;
+		top: 0;
+	}
+
+	.captab-head-controls {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0;
+		position: relative;
+
+	}
+
+	.captab-head-controller__name {
+		width: 100%;
+		padding: 6px 7px;
+		-webkit-transition-duration: .2s;
+		transition-duration: .2s;
+		text-align: center;
+		letter-spacing: normal;
+		color: #1d1d1d;
+		background-color: #f4f4f4;
+		font-size: 14px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: 1;
+	}
+
+	.captab-col-4 {
+		padding-left: 0;
+	}
+
+	.captab-head-controller {
+		width: 100% !important;
+
+		&--active {
+			.captab-head-controller__pic {
+				z-index: 3;
+			}
+		}
+
+		&:hover {
+			.captab-head-controller__pic {
+				z-index: 4;
+			}
+		}
+	}
+
+	.captab-head-controller__name {
+		//width: 120px;
+		width: 50%;
+	}
+
+	.captab-main {
+		margin-top: 0;
+	}
+
+	.captab-right__col {
+		display: none;
+		justify-content: center;
+		width: 100%;
+		text-align: center;
+	}
+
+	.captab-right {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.captab-main[data-active-col="1"] {
+		.captab-right__col--1 {
+			display: flex;
+		}
+	}
+
+	.captab-main[data-active-col="2"] {
+		.captab-right__col--2 {
+			display: flex;
+		}
+	}
+
+	.captab-main[data-active-col="3"] {
+		.captab-right__col--3 {
+			display: flex;
+		}
+	}
+
+	.captab-main[data-active-col="4"] {
+		.captab-right__col--4 {
+			display: flex;
+		}
+	}
+
+	.captab-main[data-active-col="5"] {
+		.captab-right__col--5 {
+			display: flex;
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width:990px) {
+	.section-conf-advantages {
+		padding: 25px 0 25px;
+	}
+
+	.conf-top {
+		padding: 20px 0 20px;
+	}
+
+	.capacity-section {
+		padding: 20px 0;
+	}
+
+	.czphotos-section {
+		padding: 20px 0 30px;
+
+	}
+
+	.conf-advantages {}
+
+	.conf-adv-item {
+		width: 450px;
+		max-width: calc(50% - 30px);
+	}
+}
+
+@media screen and (max-width:850px) {
+	.czphotos-arrow {
+		width: 60px;
+	}
+
+	.czphotos-arrow--next .czphotos-arrow-inner {
+		margin-right: 17px;
+	}
+
+	.czphotos-arrow--prev .czphotos-arrow-inner {
+		margin-left: 17px;
+	}
+}
+
+@media screen and (max-width:730px) {
+	.czphotos-advantages {
+		margin-top: 21px;
+	}
+	.czphotos-advantages-item__name {
+		margin-top: 10px;
+		font-size: 18px;
+	}
+	.czphotos-advantages-item {
+		margin: 0 7px 15px;
+		width: calc(50% - 14px);
+		max-width: 100%;
+		flex-grow: 1;
+	}
+	.czphotos-advantages{
+		margin-bottom: -15px;
+	}
+	.czphotos-text {
+		margin-top: 23px;
+		font-size: 16px;
+		line-height: 1.4;
+	}
+}
+
+@media screen and (max-width:690px) {
+	.captab-head-controller__name {
+		width: calc(100% - 65px);
+	}
+
+	.captab-head-controller__pic {
+		width: 65px;
+
+		img {
+			max-width: 50px;
+			height: auto;
+		}
+	}
+}
+
+
+@media screen and (max-width:660px) {
+	.my-heading {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:640px) {
+	.conf-top__text {
+		font-size: 16px;
+		line-height: 1.4;
+		margin-top: 15px;
+	}
+
+	.conf-advantages {
+		margin-bottom: -15px;
+	}
+
+	.conf-adv-item {
+		margin-bottom: 15px;
+		max-width: calc(50% - 10px);
+
+		&__pic-wrap {
+			text-align: center;
+			justify-content: center;
+			height: 60px;
+		}
+
+		&__img {}
+
+		&__text {
+			text-align: center;
+			justify-content: center;
+			font-size: 16px;
+			line-height: 1.3;
+			margin-top: 10px;
+		}
+	}
+
+	.captab-col-4 {
+		width: 250px;
+		max-width: 100%;
+	}
+
+	.captab-row {
+		display: flex;
+		flex-direction: column;
+		border-bottom: 3px solid #dcdcdc;
+		padding: 0;
+	}
+
+	.captab-head {
+		display: flex;
+		justify-content: center;
+	}
+
+	.captab-head__col {
+		display: none;
+	}
+
+	.captab-row__col {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		&.captab-col-1,
+		&.captab-col-2,
+		&.captab-col-3 {
+			padding: 5px 0;
+			border-bottom: 1px solid #dcdcdc;
+
+			&::before {
+				display: block;
+			}
+		}
+
+		&.captab-col-1::before {
+			content: 'Конференц-зал';
+		}
+
+		&.captab-col-2::before {
+			content: 'Площадь';
+		}
+
+		&.captab-col-3::before {
+			content: 'План';
+		}
+	}
+
+	.captab-right {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 5px 0;
+
+		&::before {
+			content: 'Вместимость';
+		}
+
+		.captab-right__col {
+			text-align: right;
+			justify-content: flex-end;
+		}
+	}
+}
+
+@media screen and (max-width:450px) {
+	.czphotos-advantages-item{
+		width: 100%;
+		margin: 0 0 15px;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.captab-col-4 {
+		width: 100%;
+	}
+
+	.captab-head-controller__pic {
+		width: 100px;
+	}
+
+	.captab-head-controller__name {
+		width: calc(100% - 100px);
+	}
+}
+
+
+
+
+@media screen and (max-width:360px) {
+	.conf-adv-item {
+
+		&__pic-wrap {}
+
+		&__img {}
+
+		&__text {
+			font-size: 14px;
+		}
+	}
+}
+
+.conf-top {}
+
+.conf-top-container {}
+
+.my-heading {}
+
+.conf-top__text {
+	p {
+		&+p {}
+	}
+}
+
+.section-conf-advantages {}
+
+.conf-advantages-container {}
+
+.conf-advantages {}
+
+.conf-adv-item {
+	&__pic-wrap {}
+
+	&__img {}
+
+	&__text {}
+}
+
+.capacity-section {}
+
+.container.container-capacity {}
+
+.my-heading {}
+
+.conf-top__text--capacity {}
+
+.conf-top__text {
+	p {}
+}
+
+.capacity-table {}
+
+.captab-head {
+	&__col {}
+}
+
+.captab-col {
+
+	&-1,
+	&-2,
+	&-3 {}
+
+	&-4 {}
+}
+
+.captab-head-controls {}
+
+.captab-head-controller {
+	&:first-child {}
+
+	&__name {}
+
+	&__pic {}
+
+	img {}
+
+	&--active,
+	&:hover {
+		.captab-head-controller__name {}
+
+		.captab-head-controller__pic {}
+	}
+
+	&--active {}
+}
+
+.captab-head-controller__pic {
+	img {}
+}
+
+.captab-main {}
+
+.captab-row {
+	&__col {}
+
+	&:nth-child(2n) {}
+}
+
+.captab-right {
+	&__col {
+		&:first-child {}
+	}
+}
+
+.captab-show-plane {
+	img {}
+
+	&::before {}
+
+	&:hover {
+		&::before {}
+	}
+
+	&:active {}
+
+	&:focus {}
+}
+
+.captab-main[data-active-col="1"] {
+	.captab-right__col--1 {}
+}
+
+.captab-main[data-active-col="2"] {
+	.captab-right__col--2 {}
+}
+
+.captab-main[data-active-col="3"] {
+	.captab-right__col--3 {}
+}
+
+.captab-main[data-active-col="4"] {
+	.captab-right__col--4 {}
+}
+
+.captab-main[data-active-col="5"] {
+	.captab-right__col--5 {}
+}

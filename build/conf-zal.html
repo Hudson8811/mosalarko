@@ -44,8 +44,8 @@
         <div class="container conf-top-container">
           <h1 class="my-heading">КОНФЕРЕНЦ-ЗАЛЫ</h1>
           <div class="conf-top__text">
-            <p>В аренду предлагаются конференц-залы трансформеры с качественной отделкой площадью от 35 до 120 кв. м.</p>
-            <p>Возможно проведение мероприятий для групп с количеством участников до 100 человек. В зоне, предназначенной для проведения мероприятий, находятся собственная гардеробная, санузлы, ресепшн.</p>
+             В аренду предлагаются конференц-залы трансформеры с качественной отделкой площадью от 35 до 120 кв. м.
+             Возможно проведение мероприятий для групп с количеством участников до 100 человек. В зоне, предназначенной для проведения мероприятий, находятся собственная гардеробная, санузлы, ресепшн.
           </div>
         </div>
       </section>
@@ -82,51 +82,282 @@
       <section class="capacity-section">
         <div class="container container-capacity">
           <h2 class="my-heading">ВМЕСТИМОСТЬ</h2>
-          <div class="conf-top__text">
-            <p>Выберите интересующую рассадку, и мы атоматически рассчитаем вместимость.</p>
-          </div>
+          <div class="conf-top__text conf-top__text--capacity"> Выберите интересующую рассадку, и мы атоматически рассчитаем вместимость.</div>
           <div class="capacity-table">
             <div class="captab-head">
               <div class="captab-head__col captab-col-1">Конференц-зал</div>
               <div class="captab-head__col captab-col-2">Площадь</div>
               <div class="captab-head__col captab-col-3">План</div>
               <div class="captab-head-controls captab-col-4">
-                <div class="captab-head-controller captab-head-controller--active"></div>
-                <div class="captab-head-controller__name">Конференция
+                <div class="captab-head-controller js-captab-head-controller captab-head-controller--active">
+                  <div class="captab-head-controller__name">Конференция</div>
                   <div class="captab-head-controller__pic"><img src="img/placing.png" alt=""></div>
                 </div>
-                <div class="captab-head-controller">
+                <div class="captab-head-controller js-captab-head-controller">
                   <div class="captab-head-controller__name">Ряды</div>
                   <div class="captab-head-controller__pic"><img src="img/placing2.png" alt=""></div>
                 </div>
-                <div class="captab-head-controller">
+                <div class="captab-head-controller js-captab-head-controller">
                   <div class="captab-head-controller__name">Класс</div>
                   <div class="captab-head-controller__pic"><img src="img/placing3.png" alt=""></div>
                 </div>
-                <div class="captab-head-controller">
+                <div class="captab-head-controller js-captab-head-controller">
                   <div class="captab-head-controller__name">Буква П</div>
                   <div class="captab-head-controller__pic"><img src="img/placing4.png" alt=""></div>
                 </div>
-                <div class="captab-head-controller">
+                <div class="captab-head-controller js-captab-head-controller">
                   <div class="captab-head-controller__name">Театр</div>
                   <div class="captab-head-controller__pic"><img src="img/placing5.png" alt=""></div>
                 </div>
               </div>
             </div>
-            <div class="captab-main">
+            <div class="captab-main" id="captab-main" data-active-col="1">
               <div class="captab-row">
-                <div class="captab-row__col captab-col-1">1</div>
-                <div class="captab-row__col captab-col-2">32 кв. м</div>
-                <div class="captab-row__col captab-col-3"><a class="captab-show-plane" href=""><img src="" alt=""></a></div>
+                <div class="captab-row__col captab-col-1"><span>1</span></div>
+                <div class="captab-row__col captab-col-2"><span>32 кв. м</span></div>
+                <div class="captab-row__col captab-col-3"><a class="captab-show-plane" href="img/plan-2.jpg" data-fancybox><img src="img/plan-2.jpg" alt=""></a></div>
                 <div class="captab-right captab-col-4">
-                  <div class="captab-right__col">до 15 чел</div>
-                  <div class="captab-right__col"></div>
-                  <div class="captab-right__col"></div>
-                  <div class="captab-right__col"></div>
-                  <div class="captab-right__col"></div>
+                  <div class="captab-right__col captab-right__col--1">до 15 чел</div>
+                  <div class="captab-right__col captab-right__col--2">до 35 чел</div>
+                  <div class="captab-right__col captab-right__col--3">до 15 чел</div>
+                  <div class="captab-right__col captab-right__col--4">до 15 чел</div>
+                  <div class="captab-right__col captab-right__col--5">до 15 чел</div>
+                </div>
+              </div>
+              <div class="captab-row">
+                <div class="captab-row__col captab-col-1"><span>2</span></div>
+                <div class="captab-row__col captab-col-2"><span>48 кв. м</span></div>
+                <div class="captab-row__col captab-col-3"><a class="captab-show-plane" href="img/plan-2.jpg" data-fancybox><img src="img/plan-2.jpg" alt=""></a></div>
+                <div class="captab-right captab-col-4">
+                  <div class="captab-right__col captab-right__col--1">до 25 чел</div>
+                  <div class="captab-right__col captab-right__col--2">до 35 чел</div>
+                  <div class="captab-right__col captab-right__col--3">до 25 чел</div>
+                  <div class="captab-right__col captab-right__col--4">до 25 чел</div>
+                  <div class="captab-right__col captab-right__col--5">до 25 чел</div>
+                </div>
+              </div>
+              <div class="captab-row">
+                <div class="captab-row__col captab-col-1"><span>3</span></div>
+                <div class="captab-row__col captab-col-2"><span>53 кв. м</span></div>
+                <div class="captab-row__col captab-col-3"><a class="captab-show-plane" href="img/plan-2.jpg" data-fancybox><img src="img/plan-2.jpg" alt=""></a></div>
+                <div class="captab-right captab-col-4">
+                  <div class="captab-right__col captab-right__col--1">до 35 чел</div>
+                  <div class="captab-right__col captab-right__col--2">до 35 чел</div>
+                  <div class="captab-right__col captab-right__col--3">до 35 чел</div>
+                  <div class="captab-right__col captab-right__col--4">до 35 чел</div>
+                  <div class="captab-right__col captab-right__col--5">до 35 чел</div>
+                </div>
+              </div>
+              <div class="captab-row">
+                <div class="captab-row__col captab-col-1"><span>4</span></div>
+                <div class="captab-row__col captab-col-2"><span>90 кв. м</span></div>
+                <div class="captab-row__col captab-col-3"><a class="captab-show-plane" href="img/plan-2.jpg" data-fancybox><img src="img/plan-2.jpg" alt=""></a></div>
+                <div class="captab-right captab-col-4">
+                  <div class="captab-right__col captab-right__col--1">до 45 чел</div>
+                  <div class="captab-right__col captab-right__col--2">до 35 чел</div>
+                  <div class="captab-right__col captab-right__col--3">до 45 чел</div>
+                  <div class="captab-right__col captab-right__col--4">до 45 чел</div>
+                  <div class="captab-right__col captab-right__col--5">до 45 чел</div>
+                </div>
+              </div>
+              <div class="captab-row">
+                <div class="captab-row__col captab-col-1"><span>5</span></div>
+                <div class="captab-row__col captab-col-2"><span>105 кв. м</span></div>
+                <div class="captab-row__col captab-col-3"><a class="captab-show-plane" href="img/plan-2.jpg" data-fancybox><img src="img/plan-2.jpg" alt=""></a></div>
+                <div class="captab-right captab-col-4">
+                  <div class="captab-right__col captab-right__col--1">до 60 чел</div>
+                  <div class="captab-right__col captab-right__col--2">до 35 чел</div>
+                  <div class="captab-right__col captab-right__col--3">до 60 чел</div>
+                  <div class="captab-right__col captab-right__col--4">до 60 чел</div>
+                  <div class="captab-right__col captab-right__col--5">до 60 чел</div>
+                </div>
+              </div>
+              <div class="captab-row">
+                <div class="captab-row__col captab-col-1"><span>6</span></div>
+                <div class="captab-row__col captab-col-2"><span>120 кв. м</span></div>
+                <div class="captab-row__col captab-col-3"><a class="captab-show-plane" href="img/plan-2.jpg" data-fancybox><img src="img/plan-2.jpg" alt=""></a></div>
+                <div class="captab-right captab-col-4">
+                  <div class="captab-right__col captab-right__col--1">до 75 чел</div>
+                  <div class="captab-right__col captab-right__col--2">до 35 чел</div>
+                  <div class="captab-right__col captab-right__col--3">до 75 чел</div>
+                  <div class="captab-right__col captab-right__col--4">до 75 чел</div>
+                  <div class="captab-right__col captab-right__col--5">до 75 чел</div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="czphotos-section">
+        <div class="container czphotos-container">
+          <h2 class="my-heading">ФОТОГАЛЕРЕЯ КОНФЕРЕНЦ-ЗАЛОВ</h2>
+          <div class="freeoff-tab-controls freeoff-tab-controls--czphotos">
+            <div class="freeoff-tab-controls__item freeoff-tab-controls__item--czphotos freeoff-tab-controls__item--active js-czphotos-controller">№ 1</div>
+            <div class="freeoff-tab-controls__item freeoff-tab-controls__item--czphotos js-czphotos-controller">№ 2</div>
+            <div class="freeoff-tab-controls__item freeoff-tab-controls__item--czphotos js-czphotos-controller">№ 3</div>
+            <div class="freeoff-tab-controls__item freeoff-tab-controls__item--czphotos js-czphotos-controller">№ 4</div>
+            <div class="freeoff-tab-controls__item freeoff-tab-controls__item--czphotos js-czphotos-controller">№ 5</div>
+            <div class="freeoff-tab-controls__item freeoff-tab-controls__item--czphotos js-czphotos-controller">№ 6</div>
+            <div class="freeoff-tab-controls__item freeoff-tab-controls__item--czphotos js-czphotos-controller">№ 7</div>
+          </div>
+          <div class="czphotos-tabs">
+            <div class="czphotos-tab czphotos-tab--active" style="display:none">
+              <h3 class="my-heading">Конференц-зал №1</h3>
+              <div class="czphotos-slider js-czphotos-slider"><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="1"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="2"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="3"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="4"></a></div>
+              <div class="czphotos-advantages">
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">1 этаж</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">120 кв. м</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">До 80 человек</div>
+                </div>
+              </div>
+              <div class="czphotos-text">
+                <p>Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.</p>
+              </div><a class="czphotos-plan" href="img/cz-plan.jpg" data-fancybox><img src="img/cz-plan.jpg" alt=""></a>
+            </div>
+            <div class="czphotos-tab" style="display:none">
+              <h3 class="my-heading">Конференц-зал №2</h3>
+              <div class="czphotos-slider js-czphotos-slider"><a class="czphotos-slide" href="img/news.jpg" data-fancybox><img src="img/news.jpg" alt="1"></a><a class="czphotos-slide" href="img/news.jpg" data-fancybox><img src="img/news.jpg" alt="2"></a><a class="czphotos-slide" href="img/news.jpg" data-fancybox><img src="img/news.jpg" alt="3"></a><a class="czphotos-slide" href="img/news.jpg" data-fancybox><img src="img/news.jpg" alt="4"></a></div>
+              <div class="czphotos-advantages">
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">1 этаж</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">120 кв. м</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">До 80 человек</div>
+                </div>
+              </div>
+              <div class="czphotos-text">
+                <p>Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.</p>
+              </div><a class="czphotos-plan" href="img/cz-plan.jpg" data-fancybox><img src="img/cz-plan.jpg" alt=""></a>
+            </div>
+            <div class="czphotos-tab" style="display:none">
+              <h3 class="my-heading">Конференц-зал №3</h3>
+              <div class="czphotos-slider js-czphotos-slider"><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="1"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="2"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="3"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="4"></a></div>
+              <div class="czphotos-advantages">
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">1 этаж</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">120 кв. м</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">До 80 человек</div>
+                </div>
+              </div>
+              <div class="czphotos-text">
+                <p>Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.</p>
+              </div><a class="czphotos-plan" href="img/cz-plan.jpg" data-fancybox><img src="img/cz-plan.jpg" alt=""></a>
+            </div>
+            <div class="czphotos-tab" style="display:none">
+              <h3 class="my-heading">Конференц-зал №4</h3>
+              <div class="czphotos-slider js-czphotos-slider"><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="1"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="2"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="3"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="4"></a></div>
+              <div class="czphotos-advantages">
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">1 этаж</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">120 кв. м</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">До 80 человек</div>
+                </div>
+              </div>
+              <div class="czphotos-text">
+                <p>Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.</p>
+              </div><a class="czphotos-plan" href="img/cz-plan.jpg" data-fancybox><img src="img/cz-plan.jpg" alt=""></a>
+            </div>
+            <div class="czphotos-tab" style="display:none">
+              <h3 class="my-heading">Конференц-зал №5</h3>
+              <div class="czphotos-slider js-czphotos-slider"><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="1"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="2"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="3"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="4"></a></div>
+              <div class="czphotos-advantages">
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">1 этаж</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">120 кв. м</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">До 80 человек</div>
+                </div>
+              </div>
+              <div class="czphotos-text">
+                <p>Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.</p>
+              </div><a class="czphotos-plan" href="img/cz-plan.jpg" data-fancybox><img src="img/cz-plan.jpg" alt=""></a>
+            </div>
+            <div class="czphotos-tab" style="display:none">
+              <h3 class="my-heading">Конференц-зал №6</h3>
+              <div class="czphotos-slider js-czphotos-slider"><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="1"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="2"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="3"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="4"></a></div>
+              <div class="czphotos-advantages">
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">1 этаж</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">120 кв. м</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">До 80 человек</div>
+                </div>
+              </div>
+              <div class="czphotos-text">
+                <p>Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.</p>
+              </div><a class="czphotos-plan" href="img/cz-plan.jpg" data-fancybox><img src="img/cz-plan.jpg" alt=""></a>
+            </div>
+            <div class="czphotos-tab" style="display:none">
+              <h3 class="my-heading">Конференц-зал №7</h3>
+              <div class="czphotos-slider js-czphotos-slider"><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="1"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="2"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="3"></a><a class="czphotos-slide" href="img/czpic-slide.jpg" data-fancybox><img src="img/czpic-slide.jpg" alt="4"></a></div>
+              <div class="czphotos-advantages">
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">1 этаж</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">120 кв. м</div>
+                </div>
+                <div class="czphotos-advantages-item">
+                  <div class="czphotos-advantages-item__pic"><img src="img/galka-cz.png" alt=""></div>
+                  <div class="czphotos-advantages-item__name">До 80 человек</div>
+                </div>
+              </div>
+              <div class="czphotos-text">
+                <p>Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.</p>
+              </div><a class="czphotos-plan" href="img/cz-plan.jpg" data-fancybox><img src="img/cz-plan.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container feedback__container">
+          <div class="feedback__title">БЫСТРАЯ ЗАЯВКА </div>
+          <div class="feedback__desc">Вы можете задать Ваши вопросы и договориться о просмотре объекта удобным для Вас способом</div>
+          <div class="feedback__connection"><a class="feedback__tel-wrapper"><img class="feedback__tel-icon" src="img/phone-feedback.png">
+              <div class="feedback__tel">+7 (495) 956 13 15</div></a>
+            <div class="feedback__message">ОСТАВИТЬ СООБЩЕНИЕ</div>
           </div>
         </div>
       </section>

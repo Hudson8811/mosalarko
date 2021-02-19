@@ -1,0 +1,39 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.test(style="background: grey; display: flex; justify-content: center; align-items: center; flex-direction: column;")
+		a(href="#modal-1" data-fancybox) modal-1
+		a(href="#modal-2" data-fancybox) modal-2
+		#modal-1.mail-modal
+			.mail-modal-inner
+				.mail-modal-icon
+					img(src="img/mail-sentok.png", alt="icon")
+				.mail-modal-text
+					p
+						b Ваше сообщение отправлено.
+					p Благодарим Вас за обращение.
+					p Наши специалисты свяжутся с Вами в ближайшее время.
+		br
+		#modal-2.mail-modal
+			.mail-modal-inner.mail-modal-inner--2
+				.mail-modal-icon
+					img(src="img/mail-fail.png", alt="icon")
+				.mail-modal-text
+					p
+						b Что-то пошло не так :(
+					p К сожалению произошла ошибка, и&nbsp;Ваше сообщение не было отправлено.
+					p Пожалуйста, проверьте информацию и попробуйте еще раз.
+
+
+
+
+

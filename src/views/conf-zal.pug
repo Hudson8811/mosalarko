@@ -14,8 +14,8 @@ block main
 		.container.conf-top-container
 			h1.my-heading КОНФЕРЕНЦ-ЗАЛЫ
 			.conf-top__text
-				p В аренду предлагаются конференц-залы трансформеры с качественной отделкой площадью от 35 до 120 кв. м.
-				p Возможно проведение мероприятий для групп с количеством участников до 100 человек. В зоне, предназначенной для проведения мероприятий, находятся собственная гардеробная, санузлы, ресепшн.
+				|  В аренду предлагаются конференц-залы трансформеры с качественной отделкой площадью от 35 до 120 кв. м.
+				|  Возможно проведение мероприятий для групп с количеством участников до 100 человек. В зоне, предназначенной для проведения мероприятий, находятся собственная гардеробная, санузлы, ресепшн.
 	section.section-conf-advantages
 		.container.conf-advantages-container
 			.conf-advantages
@@ -46,44 +46,346 @@ block main
 	section.capacity-section
 		.container.container-capacity
 			h2.my-heading ВМЕСТИМОСТЬ
-			.conf-top__text
-				p Выберите интересующую рассадку, и мы атоматически рассчитаем вместимость.
+			.conf-top__text.conf-top__text--capacity
+				|  Выберите интересующую рассадку, и мы атоматически рассчитаем вместимость.
 			.capacity-table
 				.captab-head
 					.captab-head__col.captab-col-1 Конференц-зал
 					.captab-head__col.captab-col-2 Площадь
 					.captab-head__col.captab-col-3 План
 					.captab-head-controls.captab-col-4
-						.captab-head-controller.captab-head-controller--active
-						.captab-head-controller__name Конференция
+						.captab-head-controller.js-captab-head-controller.captab-head-controller--active
+							.captab-head-controller__name Конференция
 							.captab-head-controller__pic
 								img(src="img/placing.png", alt="")
-						.captab-head-controller
+						.captab-head-controller.js-captab-head-controller
 							.captab-head-controller__name Ряды
 							.captab-head-controller__pic
 								img(src="img/placing2.png", alt="")
-						.captab-head-controller
+						.captab-head-controller.js-captab-head-controller
 							.captab-head-controller__name Класс
 							.captab-head-controller__pic
 								img(src="img/placing3.png", alt="")
-						.captab-head-controller
+						.captab-head-controller.js-captab-head-controller
 							.captab-head-controller__name Буква П
 							.captab-head-controller__pic
 								img(src="img/placing4.png", alt="")
-						.captab-head-controller
+						.captab-head-controller.js-captab-head-controller
 							.captab-head-controller__name Театр
 							.captab-head-controller__pic
 								img(src="img/placing5.png", alt="")
-				.captab-main
+				#captab-main.captab-main(data-active-col="1")
 					.captab-row
-						.captab-row__col.captab-col-1 1
-						.captab-row__col.captab-col-2 32 кв. м
+						.captab-row__col.captab-col-1
+							span 1
+						.captab-row__col.captab-col-2
+							span 32 кв. м
 						.captab-row__col.captab-col-3
-							a.captab-show-plane(href="")
-								img(src="", alt="")
+							a.captab-show-plane(href="img/plan-2.jpg" data-fancybox)
+								img(src="img/plan-2.jpg", alt="")
 						.captab-right.captab-col-4
-							.captab-right__col до 15 чел
-							.captab-right__col
-							.captab-right__col
-							.captab-right__col
-							.captab-right__col
+							.captab-right__col.captab-right__col--1 до 15 чел
+							.captab-right__col.captab-right__col--2 до 35 чел
+							.captab-right__col.captab-right__col--3 до 15 чел
+							.captab-right__col.captab-right__col--4 до 15 чел
+							.captab-right__col.captab-right__col--5 до 15 чел
+
+					.captab-row
+						.captab-row__col.captab-col-1
+							span 2
+						.captab-row__col.captab-col-2
+							span 48 кв. м
+						.captab-row__col.captab-col-3
+							a.captab-show-plane(href="img/plan-2.jpg" data-fancybox)
+								img(src="img/plan-2.jpg", alt="")
+						.captab-right.captab-col-4
+							.captab-right__col.captab-right__col--1 до 25 чел
+							.captab-right__col.captab-right__col--2 до 35 чел
+							.captab-right__col.captab-right__col--3 до 25 чел
+							.captab-right__col.captab-right__col--4 до 25 чел
+							.captab-right__col.captab-right__col--5 до 25 чел
+
+					.captab-row
+						.captab-row__col.captab-col-1
+							span 3
+						.captab-row__col.captab-col-2
+							span 53 кв. м
+						.captab-row__col.captab-col-3
+							a.captab-show-plane(href="img/plan-2.jpg" data-fancybox)
+								img(src="img/plan-2.jpg", alt="")
+						.captab-right.captab-col-4
+							.captab-right__col.captab-right__col--1 до 35 чел
+							.captab-right__col.captab-right__col--2 до 35 чел
+							.captab-right__col.captab-right__col--3 до 35 чел
+							.captab-right__col.captab-right__col--4 до 35 чел
+							.captab-right__col.captab-right__col--5 до 35 чел
+
+					.captab-row
+						.captab-row__col.captab-col-1
+							span 4
+						.captab-row__col.captab-col-2
+							span 90 кв. м
+						.captab-row__col.captab-col-3
+							a.captab-show-plane(href="img/plan-2.jpg" data-fancybox)
+								img(src="img/plan-2.jpg", alt="")
+						.captab-right.captab-col-4
+							.captab-right__col.captab-right__col--1 до 45 чел
+							.captab-right__col.captab-right__col--2 до 35 чел
+							.captab-right__col.captab-right__col--3 до 45 чел
+							.captab-right__col.captab-right__col--4 до 45 чел
+							.captab-right__col.captab-right__col--5 до 45 чел
+
+					.captab-row
+						.captab-row__col.captab-col-1
+							span 5
+						.captab-row__col.captab-col-2
+							span 105 кв. м
+						.captab-row__col.captab-col-3
+							a.captab-show-plane(href="img/plan-2.jpg" data-fancybox)
+								img(src="img/plan-2.jpg", alt="")
+						.captab-right.captab-col-4
+							.captab-right__col.captab-right__col--1 до 60 чел
+							.captab-right__col.captab-right__col--2 до 35 чел
+							.captab-right__col.captab-right__col--3 до 60 чел
+							.captab-right__col.captab-right__col--4 до 60 чел
+							.captab-right__col.captab-right__col--5 до 60 чел
+
+					.captab-row
+						.captab-row__col.captab-col-1
+							span 6
+						.captab-row__col.captab-col-2
+							span 120 кв. м
+						.captab-row__col.captab-col-3
+							a.captab-show-plane(href="img/plan-2.jpg" data-fancybox)
+								img(src="img/plan-2.jpg", alt="")
+						.captab-right.captab-col-4
+							.captab-right__col.captab-right__col--1 до 75 чел
+							.captab-right__col.captab-right__col--2 до 35 чел
+							.captab-right__col.captab-right__col--3 до 75 чел
+							.captab-right__col.captab-right__col--4 до 75 чел
+							.captab-right__col.captab-right__col--5 до 75 чел
+
+	section.czphotos-section
+		.container.czphotos-container
+			h2.my-heading ФОТОГАЛЕРЕЯ КОНФЕРЕНЦ-ЗАЛОВ
+
+			.freeoff-tab-controls.freeoff-tab-controls--czphotos
+				.freeoff-tab-controls__item.freeoff-tab-controls__item--czphotos.freeoff-tab-controls__item--active.js-czphotos-controller № 1
+				.freeoff-tab-controls__item.freeoff-tab-controls__item--czphotos.js-czphotos-controller № 2
+				.freeoff-tab-controls__item.freeoff-tab-controls__item--czphotos.js-czphotos-controller № 3
+				.freeoff-tab-controls__item.freeoff-tab-controls__item--czphotos.js-czphotos-controller № 4
+				.freeoff-tab-controls__item.freeoff-tab-controls__item--czphotos.js-czphotos-controller № 5
+				.freeoff-tab-controls__item.freeoff-tab-controls__item--czphotos.js-czphotos-controller № 6
+				.freeoff-tab-controls__item.freeoff-tab-controls__item--czphotos.js-czphotos-controller № 7
+			.czphotos-tabs
+				.czphotos-tab.czphotos-tab--active(style="display:none")
+					h3.my-heading Конференц-зал №1
+					.czphotos-slider.js-czphotos-slider
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="1")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="2")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="3")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="4")
+					.czphotos-advantages
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 1 этаж
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 120 кв. м
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name До 80 человек
+					.czphotos-text
+						p Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.
+
+					a.czphotos-plan(href="img/cz-plan.jpg"  data-fancybox)
+						img(src="img/cz-plan.jpg", alt="")
+
+				.czphotos-tab(style="display:none")
+					h3.my-heading Конференц-зал №2
+					.czphotos-slider.js-czphotos-slider
+						a.czphotos-slide(href="img/news.jpg" data-fancybox)
+							img(src="img/news.jpg", alt="1")
+						a.czphotos-slide(href="img/news.jpg" data-fancybox)
+							img(src="img/news.jpg", alt="2")
+						a.czphotos-slide(href="img/news.jpg" data-fancybox)
+							img(src="img/news.jpg", alt="3")
+						a.czphotos-slide(href="img/news.jpg" data-fancybox)
+							img(src="img/news.jpg", alt="4")
+					.czphotos-advantages
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 1 этаж
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 120 кв. м
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name До 80 человек
+					.czphotos-text
+						p Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.
+
+					a.czphotos-plan(href="img/cz-plan.jpg"  data-fancybox)
+						img(src="img/cz-plan.jpg", alt="")
+
+				.czphotos-tab(style="display:none")
+					h3.my-heading Конференц-зал №3
+					.czphotos-slider.js-czphotos-slider
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="1")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="2")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="3")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="4")
+					.czphotos-advantages
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 1 этаж
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 120 кв. м
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name До 80 человек
+					.czphotos-text
+						p Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.
+
+					a.czphotos-plan(href="img/cz-plan.jpg"  data-fancybox)
+						img(src="img/cz-plan.jpg", alt="")
+
+				.czphotos-tab(style="display:none")
+					h3.my-heading Конференц-зал №4
+					.czphotos-slider.js-czphotos-slider
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="1")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="2")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="3")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="4")
+					.czphotos-advantages
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 1 этаж
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 120 кв. м
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name До 80 человек
+					.czphotos-text
+						p Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.
+
+					a.czphotos-plan(href="img/cz-plan.jpg"  data-fancybox)
+						img(src="img/cz-plan.jpg", alt="")
+
+				.czphotos-tab(style="display:none")
+					h3.my-heading Конференц-зал №5
+					.czphotos-slider.js-czphotos-slider
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="1")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="2")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="3")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="4")
+					.czphotos-advantages
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 1 этаж
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 120 кв. м
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name До 80 человек
+					.czphotos-text
+						p Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.
+
+					a.czphotos-plan(href="img/cz-plan.jpg"  data-fancybox)
+						img(src="img/cz-plan.jpg", alt="")
+
+				.czphotos-tab(style="display:none")
+					h3.my-heading Конференц-зал №6
+					.czphotos-slider.js-czphotos-slider
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="1")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="2")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="3")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="4")
+					.czphotos-advantages
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 1 этаж
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 120 кв. м
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name До 80 человек
+					.czphotos-text
+						p Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.
+
+					a.czphotos-plan(href="img/cz-plan.jpg"  data-fancybox)
+						img(src="img/cz-plan.jpg", alt="")
+
+				.czphotos-tab(style="display:none")
+					h3.my-heading Конференц-зал №7
+					.czphotos-slider.js-czphotos-slider
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="1")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="2")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="3")
+						a.czphotos-slide(href="img/czpic-slide.jpg" data-fancybox)
+							img(src="img/czpic-slide.jpg", alt="4")
+					.czphotos-advantages
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 1 этаж
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name 120 кв. м
+						.czphotos-advantages-item
+							.czphotos-advantages-item__pic
+								img(src="img/galka-cz.png", alt="")
+							.czphotos-advantages-item__name До 80 человек
+					.czphotos-text
+						p Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах. Мы можем предложить просторные конференц-залы для ваших мероприятий и событий. И далее небольшой текст о залах и услугах.
+
+					a.czphotos-plan(href="img/cz-plan.jpg"  data-fancybox)
+						img(src="img/cz-plan.jpg", alt="")
+
+	include partials/main/feedback

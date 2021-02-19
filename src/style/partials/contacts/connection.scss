@@ -1,0 +1,58 @@
+.connection {
+padding-top: 46px;
+padding-bottom: 52px;
+    &__container {
+        padding: 0 20px;
+    }
+    
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+        @media screen and (max-width: 800px) {
+            width: calc(50% - 20px);
+            margin-bottom: 25px;
+            &:nth-child(2) {
+                margin-right: 0;
+            }
+            &:last-child {
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width: 660px) {
+            width: calc(100%);
+            margin-bottom: 25px;
+            &:not(:last-child) {
+                margin-right: 0;
+
+            }
+        }
+    }
+    
+    &__icon {
+        height: 53px;
+        margin-bottom: 17px;
+    }
+    
+    &__decs {
+        color: #1e1e1e;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-weight: 400;
+        @media screen and (max-width: 400px) {
+           font-size: 20px;
+        }
+    }
+}

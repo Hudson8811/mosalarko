@@ -1,0 +1,36 @@
+@media screen and (max-width: 750px) {
+	.gallery-page__type-desc {
+		br {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 600px){
+	.news__card-title {
+		font-size: 16px;
+		line-height: 1.4;
+		text-align: center;
+	}
+	.news__card-desc {
+		font-size: 14px;
+		line-height: 1.4;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+	.info-business__row {
+		margin: -15px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.cooperation__stage-text {
+		font-size: 15px;
+		line-height: 1.4;
+	}
+
+}

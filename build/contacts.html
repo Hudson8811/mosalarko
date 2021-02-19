@@ -73,7 +73,7 @@
             </label>
             <label class="message__form-label">
               <div class="message__form-tel">Телефон*</div>
-              <input class="message__form-input">
+              <input class="message__form-input" aria-invalid="true">
             </label>
             <label class="message__form-label">
               <div class="message__form-mail">E-mail*</div>
@@ -84,12 +84,12 @@
               <textarea class="message__form-textarea"></textarea>
             </label>
             <div class="message__form-button-wrapper">
-              <div class="message__form-button-text">Не все поля заполнены или заполнены некорректно.<br/>Пожалуйста, проверьте информацию</div>
+              <div class="message__form-button-text">Не все поля заполнены или заполнены некорректно.<br/> Пожалуйста, проверьте информацию</div>
               <button class="message__form-button">ОТПРАВИТЬ</button>
             </div>
           </div>
           <div class="message__line"></div>
-          <div class="message__info">Поля, отмеченные знаком * - обязательны для заполнения Выберите удобный для Вас способ связи, чтобы мы могли оперативно связаться с Вами</div>
+          <div class="message__info">Поля, отмеченные знаком * - обязательны для заполнения Выберите удобный для Вас способ связи, чтобы мы могли оперативно связаться с Вами</div><br><a href="#modal-1" data-fancybox style="color: green; font-weight: 700;">открыть modal-1(удалить после привязки к ивенту отправки)</a><br><a href="#modal-2" data-fancybox style="color: green; font-weight: 700;">открыть modal-2(удалить после привязки к ивенту отправки)</a>
         </div>
       </section>
       <section class="way">
@@ -111,6 +111,54 @@
           </div>
         </div>
       </section>
+      <section class="section-map">
+        <div class="secmap-inner" id="secmap-map"></div>
+      </section>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=e8f491bc-318f-46ec-97f9-9a35aaae3645"></script>
+      <script>
+        var iconImageSizeDesktop=[192, 177];
+        var iconImageOffsetDesktop=[-100, -177];
+        
+        var iconImageSizeMob=[120, 111];
+        var iconImageOffsetMob=[-60, -111];
+        
+        var is_mob = window.innerWidth<1000;//Мобилка ли?
+        
+        
+        ymaps.ready(function () {
+        	var myMap = new ymaps.Map('secmap-map', {
+        			center: [55.7390625,37.658652],
+        
+        			zoom: 17,
+        			controls: []
+        		}, {
+        			searchControlProvider: 'yandex#search'
+        		}),
+        
+        		// Создаём макет содержимого.
+        		MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        			'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        		),
+        
+        		myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        			hintContent: false,
+        			balloonContent: false
+        		}, {
+        			// Опции.
+        			// Необходимо указать данный тип макета.
+        			iconLayout: 'default#image',
+        			// Своё изображение иконки метки.
+        			iconImageHref: 'img/map-icon.png',
+        			// Размеры метки.
+        			iconImageSize: is_mob?iconImageSizeMob:iconImageSizeDesktop,
+        			// Смещение левого верхнего угла иконки относительно
+        			// её "ножки" (точки привязки).
+        			iconImageOffset: is_mob?iconImageOffsetMob:iconImageOffsetDesktop,
+        		});
+        	myMap.geoObjects
+        		.add(myPlacemark);
+        });
+      </script>
     </main>
     <footer class="site-footer">
       <div class="sf-top">
@@ -149,6 +197,26 @@
         </div>
       </div>
     </footer>
+    <div class="mail-modal" id="modal-1" style="display:none;">
+      <div class="mail-modal-inner">
+        <div class="mail-modal-icon"><img src="img/mail-sentok.png" alt="icon"></div>
+        <div class="mail-modal-text">
+          <p><b>Ваше сообщение отправлено.</b></p>
+          <p>Благодарим Вас за обращение.</p>
+          <p>Наши специалисты свяжутся с Вами в ближайшее время.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mail-modal" id="modal-2" style="display:none;">
+      <div class="mail-modal-inner mail-modal-inner--2">
+        <div class="mail-modal-icon"><img src="img/mail-fail.png" alt="icon"></div>
+        <div class="mail-modal-text">
+          <p><b>Что-то пошло не так :(</b></p>
+          <p>К сожалению произошла ошибка, и&nbsp;Ваше сообщение не было отправлено.</p>
+          <p>Пожалуйста, проверьте информацию и попробуйте еще раз.</p>
+        </div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>

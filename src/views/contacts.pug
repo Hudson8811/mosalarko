@@ -1,66 +1,65 @@
 extends layouts/default
 
 block vars
-    -
-        const page = {
-            title: 'index.html'
-        };
+	-
+		const page = {
+			title: 'index.html'
+		};
 
 
 
 
 block main
-    include partials/contacts/contacts-hero
-    include partials/contacts/connection
-    include partials/contacts/message
-    include partials/contacts/way
-    include partials/main/feedback
+	include partials/contacts/contacts-hero
+	include partials/contacts/connection
+	include partials/contacts/message
+	include partials/contacts/way
+	include partials/main/feedback
 
-//-     section.section-map
-//-         #secmap-map.secmap-inner
+	section.section-map
+		#secmap-map.secmap-inner
+
+	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e8f491bc-318f-46ec-97f9-9a35aaae3645")
+	script.
+		var iconImageSizeDesktop=[192, 177];
+		var iconImageOffsetDesktop=[-100, -177];
+
+		var iconImageSizeMob=[120, 111];
+		var iconImageOffsetMob=[-60, -111];
+
+		var is_mob = window.innerWidth<1000;//Мобилка ли?
 
 
-//-     script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e8f491bc-318f-46ec-97f9-9a35aaae3645")
-//-     script.
-//-         var iconImageSizeDesktop=[192, 177];
-//-         var iconImageOffsetDesktop=[-100, -177];
+		ymaps.ready(function () {
+			var myMap = new ymaps.Map('secmap-map', {
+					center: [55.7390625,37.658652],
 
-//-         var iconImageSizeMob=[120, 111];
-//-         var iconImageOffsetMob=[-60, -111];
+					zoom: 17,
+					controls: []
+				}, {
+					searchControlProvider: 'yandex#search'
+				}),
 
-//-         var is_mob = window.innerWidth<1000;//Мобилка ли?
+				// Создаём макет содержимого.
+				MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+					'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+				),
 
-
-//-         ymaps.ready(function () {
-//-             var myMap = new ymaps.Map('secmap-map', {
-//-                 center: [55.7390625,37.658652],
-
-//-                 zoom: 17,
-//-                 controls: []
-//- }, {
-//-     searchControlProvider: 'yandex#search'
-//- }),
-
-//- // Создаём макет содержимого.
-//- MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-//-     '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-//- ),
-
-//- myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-//-     hintContent: false,
-//-     balloonContent: false
-//- }, {
-//-     // Опции.
-//-     // Необходимо указать данный тип макета.
-//-     iconLayout: 'default#image',
-//-     // Своё изображение иконки метки.
-//-     iconImageHref: 'img/map-icon.png',
-//-     // Размеры метки.
-//-     iconImageSize: is_mob?iconImageSizeMob:iconImageSizeDesktop,
-//-     // Смещение левого верхнего угла иконки относительно
-//-     // её "ножки" (точки привязки).
-//-     iconImageOffset: is_mob?iconImageOffsetMob:iconImageOffsetDesktop,
-//- });
-//-             myMap.geoObjects
-//-                 .add(myPlacemark);
-//-         });
+				myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+					hintContent: false,
+					balloonContent: false
+				}, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: 'default#image',
+					// Своё изображение иконки метки.
+					iconImageHref: 'img/map-icon.png',
+					// Размеры метки.
+					iconImageSize: is_mob?iconImageSizeMob:iconImageSizeDesktop,
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: is_mob?iconImageOffsetMob:iconImageOffsetDesktop,
+				});
+			myMap.geoObjects
+				.add(myPlacemark);
+		});

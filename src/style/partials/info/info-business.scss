@@ -78,7 +78,7 @@
 	&__card-img-wrapper {
 		margin-bottom: 15px;
 
-		height: 71px;
+		max-height: 71px;
 
 		@media screen and (max-width: 450px) {
 			display: flex;

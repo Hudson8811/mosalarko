@@ -36,18 +36,25 @@ padding-bottom: 65px;
     
     &__card-img-wrapper {
         position: relative;
-        padding-top: 73%;
         margin-bottom: 30px;
-
+        &::before {
+            content: '';
+            width: 100%;
+            display: block;
+            padding-top: 220/300 * 100%;
+        }
     }
     
     &__card-img {
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
+        height: 100%;
         width: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center center;
+        z-index: 0;
     }
     
     &__card-date {

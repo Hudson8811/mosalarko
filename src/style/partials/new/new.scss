@@ -10,6 +10,7 @@ padding-bottom: 50px;
     
     &__title {
         margin-bottom: 28px;
+        text-decoration: underline;
         @media screen and (max-width: 578px) {
             font-size: 20px;
             margin-bottom: 14px;

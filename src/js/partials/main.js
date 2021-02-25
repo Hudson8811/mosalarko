@@ -56,15 +56,15 @@ $(document).ready(function () {
 	$('.js-gallery-more').click(function (e) {
 		e.preventDefault();
 		var btn=$(this);
-		console.log(more_pics_offset);
-		console.log(more_pics);
+		//console.log(more_pics_offset);
+		//console.log(more_pics);
 
 
 		var str='';
-		for(i=0;i<12;++i){
+		for(i=0;i<9;++i){
 			if(more_pics_offset+i<more_pics.length){
 				var idx=more_pics_offset+i;
-				str+='<a class="gallery-page__link-img photo-gallery" href="'+more_pics[idx]+'" data-fancybox="images" data-caption="'+more_pics_captions[idx]+'"><div class="gallery-page__link-desc">'+more_pics_captions[idx]+'</div><img class="gallery-page__img lozad" alt="'+more_pics_alts[idx]+'" src="'+more_pics_thumbnails[idx]+'"></a>';
+				str+='<a class="gallery-page__link-img photo-gallery" href="'+more_pics[idx]+'" data-fancybox="images" data-caption="'+more_pics_captions[idx]+'"><div class="gallery-page__link-desc">'+more_pics_captions[idx]+'</div><img class="gallery-page__img" alt="'+more_pics_alts[idx]+'" src="'+more_pics_thumbnails[idx]+'"></a>';
 			}
 			else{
 				btn.remove();
@@ -74,8 +74,8 @@ $(document).ready(function () {
 
 		$(more_pics_target).append(str);
 
-		observer.observe();
-		more_pics_offset+=12;
+		//observer.observe();
+		more_pics_offset+=9;
 
 		if(more_pics_offset+1>=more_pics.length){
 			btn.remove();

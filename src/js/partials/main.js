@@ -1,12 +1,37 @@
 $(document).ready(function () {
 	// $("input[name='phone']").mask(" +7 (999) 999-99-99");
 
+	var image = $('.js-image-map > img');
+	image.mapster({
+		isSelectable: false,
+		fillColor: 'ff0000',
+		fillOpacity: 0.5
+	});
+
+	var resizing;
+	var resize = function() {
+		if (resizing) return;
+		resizing=true;
+		image.mapster('resize',$('.js-image-map').width(),0,0);
+		resizing=false;
+	};
+	$(window).bind('resize',resize);
+
 	$('.js-freeoff-controller').click(function () {
 		var idx = $(this).index();
-		$('.freeoff-tab').eq(idx).addClass('freeoff-tab--active')
-			.siblings('.freeoff-tab--active').removeClass('freeoff-tab--active');
-		$(this).addClass('freeoff-tab-controls__item--active')
-			.siblings('.freeoff-tab-controls__item--active').removeClass('freeoff-tab-controls__item--active');
+		$('.freeoff-tab').eq(idx).addClass('freeoff-tab--active').siblings('.freeoff-tab--active').removeClass('freeoff-tab--active');
+		$(this).addClass('freeoff-tab-controls__item--active').siblings('.freeoff-tab-controls__item--active').removeClass('freeoff-tab-controls__item--active');
+
+		$('.js-image-overlay img').eq(idx).addClass('active').siblings('.active').removeClass('active');
+	});
+
+	$('.js-image-map map area').click(function () {
+		event.preventDefault();
+		var idx = $(this).index();
+		$('.freeoff-tab').eq(idx).addClass('freeoff-tab--active').siblings('.freeoff-tab--active').removeClass('freeoff-tab--active');
+		$('.js-freeoff-controller').eq(idx).addClass('freeoff-tab-controls__item--active').siblings('.freeoff-tab-controls__item--active').removeClass('freeoff-tab-controls__item--active');
+
+		$('.js-image-overlay img').eq(idx).addClass('active').siblings('img').removeClass('active');
 	});
 
 	$('.js-captab-head-controller').click(function () {

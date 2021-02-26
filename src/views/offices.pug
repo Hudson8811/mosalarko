@@ -23,203 +23,194 @@ block main
 					.freeoff-tab-controls__item.js-freeoff-controller 6 этаж
 					.freeoff-tab-controls__item.js-freeoff-controller 7 этаж
 				.freeoff-tabs
+					.freeoff-tabs__image.js-image-map
+						img(src='img/house/house.png' usemap='#image-map')
+						map(name='image-map')
+							area(alt='1 этаж' title='1 этаж' href='javascript:;' coords='63,415,64,456,116,463,173,463,606,371,607,343,172,423,116,424' shape='poly')
+							area(alt='2 этаж' title='2 этаж' href='javascript:;' coords='62,359,62,396,117,402,171,401,604,331,604,302,168,366,114,365' shape='poly')
+							area(alt='3 этаж' title='3 этаж' href='javascript:;' coords='63,316,62,359,118,365,168,366,605,302,604,273,171,321,120,322' shape='poly')
+							area(alt='4 этаж' title='4 этаж' href='javascript:;' coords='62,272,62,315,121,321,170,320,604,272,604,244,169,276,117,276' shape='poly')
+							area(alt='5 этаж' title='5 этаж' href='javascript:;' coords='59,223,59,261,119,266,177,266,603,238,604,210,181,224,115,225' shape='poly')
+							area(alt='6 этаж' title='6 этаж' href='javascript:;' coords='89,180,89,219,119,221,175,220,598,207,597,180,198,182' shape='poly')
+							area(alt='7 этаж' title='7 этаж' href='javascript:;' coords='199,140,199,182,597,180,576,138,286,131,282,140' shape='poly')
+						.freeoff-tabs__image-overlay.js-image-overlay
+							img.active(src="img/house/et-1.png" alt="")
+							img(src="img/house/et-2.png" alt="")
+							img(src="img/house/et-3.png" alt="")
+							img(src="img/house/et-4.png" alt="")
+							img(src="img/house/et-5.png" alt="")
+							img(src="img/house/et-6.png" alt="")
+							img(src="img/house/et-7.png" alt="")
+
 					.freeoff-tab.freeoff-tab--active
-						.freeoff-tab__left
-							img.freeoff-tab-pic(src="img/house/et-1.png", alt="")
-
-						.freeoff-tab__right
-							.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
-								br
-								|  НА 1 ЭТАЖЕ
-							.freeoff-list
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
+						.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
+							br
+							|  НА 1 ЭТАЖЕ
+						.freeoff-list
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
 					.freeoff-tab
-						.freeoff-tab__left
-							img.freeoff-tab-pic(src="img/house/et-2.png", alt="")
-
-						.freeoff-tab__right
-							.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
-								br
-								|  НА 2 ЭТАЖЕ
-							.freeoff-list
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
+						.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
+							br
+							|  НА 2 ЭТАЖЕ
+						.freeoff-list
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
 
 					.freeoff-tab
-						.freeoff-tab__left
-							img.freeoff-tab-pic(src="img/house/et-3.png", alt="")
-
-						.freeoff-tab__right
-							.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
-								br
-								|  НА 3 ЭТАЖЕ
-							.freeoff-list
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
+						.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
+							br
+							|  НА 3 ЭТАЖЕ
+						.freeoff-list
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
 
 					.freeoff-tab
-						.freeoff-tab__left
-							img.freeoff-tab-pic(src="img/house/et-4.png", alt="")
-
-						.freeoff-tab__right
-							.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
-								br
-								|  НА 4 ЭТАЖЕ
-							.freeoff-list
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
+						.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
+							br
+							|  НА 4 ЭТАЖЕ
+						.freeoff-list
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
 
 					.freeoff-tab
-						.freeoff-tab__left
-							img.freeoff-tab-pic(src="img/house/et-5.png", alt="")
-
-						.freeoff-tab__right
-							.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
-								br
-								|  НА 5 ЭТАЖЕ
-							.freeoff-list
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
+						.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
+							br
+							|  НА 5 ЭТАЖЕ
+						.freeoff-list
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
 
 					.freeoff-tab
-						.freeoff-tab__left
-							img.freeoff-tab-pic(src="img/house/et-6.png", alt="")
-
-						.freeoff-tab__right
-							.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
-								br
-								|  НА 6 ЭТАЖЕ
-							.freeoff-list
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
+						.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
+							br
+							|  НА 6 ЭТАЖЕ
+						.freeoff-list
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
 
 					.freeoff-tab
-						.freeoff-tab__left
-							img.freeoff-tab-pic(src="img/house/et-7.png", alt="")
-
-						.freeoff-tab__right
-							.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
-								br
-								|  НА 7 ЭТАЖЕ
-							.freeoff-list
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 43 кв. м
-									span.freeoff-list-item__more Подробнее
-								a.freeoff-list-item(href="#")
-									span.freeoff-list-item__size 132 кв. м
-									span.freeoff-list-item__more Подробнее
+						.freeoff-tab-title СВОБОДНЫЕ ОФИСЫ
+							br
+							|  НА 7 ЭТАЖЕ
+						.freeoff-list
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 43 кв. м
+								span.freeoff-list-item__more Подробнее
+							a.freeoff-list-item(href="#")
+								span.freeoff-list-item__size 132 кв. м
+								span.freeoff-list-item__more Подробнее
 
 	include partials/main/feedback
 

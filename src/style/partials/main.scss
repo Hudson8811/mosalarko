@@ -62,7 +62,9 @@ body {
 .main {
 	flex-grow: 1;
 }
-
+html,body{
+	height: 100%;
+}
 .container {
 	box-sizing: border-box;
 	width: 981px;

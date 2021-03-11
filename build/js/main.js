@@ -179,9 +179,42 @@ $(document).ready(function () {
 		}
 	}
 
+	$('.gallery .gallery__row').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		responsive: [
+			{
+				breakpoint: 578,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
+	});
 
-
-
-
+	$('.place__row').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		responsive: [
+			{
+				breakpoint: 1040,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
+	});
 
 });

@@ -26,46 +26,34 @@
     &__row {
         display: flex;
         margin-bottom: 44px;
-        @media screen and (max-width: 800px) {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+    }
+
+    .slick-slide {
+        padding: 0 20px;
     }
     
     &__card {
+        height: 371px;
+
+        @media screen and (max-width: 1040px) {
+            height: 232px;
+            padding: 20px;
+        }
+    }
+
+    &__card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
         background-color: #ffffff;
-        width: calc(33.3333%);
         padding-top: 49px;
         padding-bottom: 43px;
         padding-left: 45px;
         padding-right: 45px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &:not(:last-child) {
-            margin-right: 40px;
-        }
+
         @media screen and (max-width: 1040px) {
             padding: 20px;
-        }
-
-        @media screen and (max-width: 800px) {
-            &:not(:last-child) {
-                margin-right: 0px;
-                margin-bottom: 40px;
-            }
-            &:nth-child(1) {
-                margin-right: 40px;
-            }
-            width: calc(50% - 20px);
-        }
-
-        @media screen and (max-width: 450px) {
-            padding: 40px;
-            width: calc(100%);
-            &:nth-child(1) {
-                margin-right: 0px;
-            }
         }
     }
     
@@ -85,7 +73,7 @@
         border-top: 2px solid #f4f4f4;
         border-bottom: 2px solid #f4f4f4;
         color: #ff0b0b;
-        font-size: 48px;
+        font-size: 45px;
         text-align: center;
         margin-bottom: 29px;
         width: 100%;
@@ -99,6 +87,8 @@
         font-size: 24px;
         font-style: normal;
         line-height: 30px;
+        margin-top: auto;
+
         @media screen and (max-width: 1040px) {
             font-size: 18px;
         }

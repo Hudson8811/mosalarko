@@ -1,67 +1,28 @@
 extends layouts/default
 
 block vars
-	-
-		const page = {
-			title: 'index.html'
-		};
+    -
+        const page = {
+            title: 'index.html'
+        };
 
 
 
 
 block main
-	include partials/main/hero
-	include partials/main/business-center
-	include partials/main/place
-	include partials/main/gallery
-	include partials/main/characteristics
-	include partials/main/feedback
-
-	section.section-map
-		#secmap-map.secmap-inner
-
-
-	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e8f491bc-318f-46ec-97f9-9a35aaae3645")
-	script.
-		var iconImageSizeDesktop=[192, 177];
-		var iconImageOffsetDesktop=[-100, -177];
-
-		var iconImageSizeMob=[120, 111];
-		var iconImageOffsetMob=[-60, -111];
-
-		var is_mob = window.innerWidth<1000;//Мобилка ли?
+    .container
+        br
+        <ul>
+            <li><a href="build/main.html">ГЛАВНАЯ</a></li></li>
+            <li><a href="build/conf-zal.html">КОНФЕРЕНЦ-ЗАЛЫ</a></li></li>
+            <li><a href="build/contacts.html">КОНТАКТЫ</a></li></li>
+            <li><a href="build/cooperation.html">ПАРТНЕРАМ</a></li></li>
+            <li><a href="build/gallery-page.html">ГАЛЕРЕЯ</a></li></li>
+            <li><a href="build/info.html">О НАС</a></li></li>
+            <li><a href="build/new.html">НОВОСТЬ</a></li></li>
+            <li><a href="build/news.html">НОВОСТИ</a></li></li>
+            <li><a href="build/offices.html">ОФИСЫ</a></li></li>
+        </ul>
 
 
-		ymaps.ready(function () {
-			var myMap = new ymaps.Map('secmap-map', {
-					center: [55.7390625,37.658652],
 
-					zoom: 17,
-					controls: []
-				}, {
-					searchControlProvider: 'yandex#search'
-				}),
-
-				// Создаём макет содержимого.
-				MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-					'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-				),
-
-				myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-					hintContent: false,
-					balloonContent: false
-				}, {
-					// Опции.
-					// Необходимо указать данный тип макета.
-					iconLayout: 'default#image',
-					// Своё изображение иконки метки.
-					iconImageHref: 'img/map-icon.png',
-					// Размеры метки.
-					iconImageSize: is_mob?iconImageSizeMob:iconImageSizeDesktop,
-					// Смещение левого верхнего угла иконки относительно
-					// её "ножки" (точки привязки).
-					iconImageOffset: is_mob?iconImageOffsetMob:iconImageOffsetDesktop,
-				});
-			myMap.geoObjects
-				.add(myPlacemark);
-		});
